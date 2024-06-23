@@ -1,0 +1,91 @@
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+
+body {
+    background-color: #f8f9fa; /* Fondo gris claro predeterminado */
+    color: #343a40; /* Texto gris oscuro predeterminado */
+    font-family: Arial, sans-serif;
+    margin: 0; /* Añadido para asegurar que no haya margen adicional */
+    padding: 0; /* Añadido para asegurar que no haya relleno adicional */
+    position: relative; /* Asegura que el contenido flote encima */
+
+    /* Fondo de la imagen */
+    background-image: url('/public/assets/images/fondoindex.jpeg'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    height: 100vh; /* Altura del 100% del viewport */
+    overflow-x: hidden; /* Evita desplazamiento horizontal */
+}
+
+.title-container {
+    text-align: center; /* Alinea el contenido al centro */
+    margin-top: auto; /* Espacio superior para separar el título */
+    margin-bottom: auto; /* Espacio inferior */
+}
+
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px; /* Para separarlo del footer */
+    padding: 20px; /* Añadido para espaciar el contenido */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+    border-radius: 10px; /* Bordes redondeados para el contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilos para el banner */
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    margin-top: 0; /* Añadido para eliminar el margen superior */
+    padding: 20px 0; /* Añadido para espaciar el contenido */
+}
+
+.banner .banner-content {
+    color: #fff; /* Color del texto del banner */
+}
+
+.banner h1 {
+    font-size: 36px; /* Tamaño de fuente del título del banner */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra suave para el texto del banner */
+}
+
+/* Estilos para la grilla de productos */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product-item {
+    background-color: #ffffff; /* Fondo blanco */
+    border: 1px solid #dee2e6; /* Borde gris claro */
+    border-radius: 10px; /* Esquinas redondeadas */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Esquinas redondeadas para imágenes */
+}
+
+.product-item h3 {
+    margin-top: 15px;
+    color: #343a40; /* Color neutro */
+}
+
+.product-item p {
+    color: #6c757d; /* Color gris para descripciones */
+}
+
+.product-item .btn {
+    margin-top: 10px; /* para mantener los botones separados, lo demas lo hace boostrap */
+}
