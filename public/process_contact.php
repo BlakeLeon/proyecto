@@ -32,13 +32,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username = 'tiendarobotsadri@gmail.com';//poner correo
-            $mail->Password = 'cphl gdcj xwmb odah'; // Utiliza una contraseña de aplicación o generar una contraseña para la app
+            $mail->Username = '@gmail.com';//poner correo
+            $mail->Password = ''; // Utiliza una contraseña de aplicación o generar una contraseña para la app
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
     
             // Configuración del correo
-            $mail->setFrom('tiendarobotsadri@gmail.com', 'Tienda de Robots Educativos'); // poner mail para que la gente pudiera responder
+            $mail->setFrom('@gmail.com', 'Tienda de Robots Educativos'); // poner mail para que la gente pudiera responder
             $mail->addAddress($email, $name);
             $mail->Subject = 'Confirmación de contacto';
             $mail->Body = "Hola $name,\n\nGracias por contactarnos. Hemos recibido tu mensaje y te responderemos pronto.\n\nMensaje recibido:\n$message";
